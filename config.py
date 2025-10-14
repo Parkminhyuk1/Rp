@@ -10,8 +10,9 @@
 class Config:
     #기초 설정
     guild_id = 1393589035364257875 #서버 아이디 (https://bit.ly/3WwRT0O 에서 자세한 내용 확인)
-    bot_token = "MTQyNzU2MDA0ODQ0NzcxNzQyNw.G5X9Jx.i0h2JIe8FwQdJgtIslcr2jdsptHBop7nJx0Zq4" #봇 토큰 (https://bit.ly/4gaOuvY) 
+    bot_token = "MTQyNzU2MDA0ODQ0NzcxNzQyNw.Gt3zfg.o7lPdY33D7oAFEW4qalidtJ_jkTaYioYLludMU" #봇 토큰 (https://bit.ly/4gaOuvY) 
     server_name = "제주연동" #서버의 이름 (지역명 등 디스코드 서버 이름과는 관련 없어도 됨.)
+    server_host "0.0.0.0"
     server_port = 8000
 
     #유틸리티 기능 설정
@@ -55,5 +56,6 @@ class Config:
 
     #인게임 밴 기능 관련
     ban_role = 1395954200164171897 #인게임, 디스코드에서 밴 명령어를 사용할 수 있게 하는 역할 ID
+
 
 
