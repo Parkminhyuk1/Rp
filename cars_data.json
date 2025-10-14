@@ -1,0 +1,34 @@
+{
+    "8w1p1p1": [
+        {
+            "number_plate": "260가3518",
+            "car_name": "테스트카"
+        },
+        {
+            "number_plate": "639타4936",
+            "car_name": "테스트카"
+        },
+        {
+            "number_plate": "852하4428",
+            "car_name": "테스트카"
+        },
+        {
+            "number_plate": "452바2103",
+            "car_name": "테스트카"
+        },
+        {
+            "number_plate": "501타8882",
+            "car_name": "테스트카"
+        },
+        {
+            "number_plate": "967나7196",
+            "car_name": "테스트카"
+        }
+    ],
+    "8w3p3p3": [
+        {
+            "number_plate": "200라3757",
+            "car_name": "테스트카"
+        }
+    ]
+}

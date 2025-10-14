@@ -1,0 +1,2 @@
+Username: 8w1p1p1, Allowed: True, Mode: open_server, Status: {'special_mode': False, 'open': True}
+

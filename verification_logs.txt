@@ -1,0 +1,14 @@
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: 8w1p1p1 | ¾ÆÀÌµğ: 1452497322 | »çÀ¯: 'cp949' codec can't encode character '\U0001f4bc' in position 66: illegal multibyte sequence
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: 8w1p1p1 | ¾ÆÀÌµğ: 1452497322 | »çÀ¯: 'cp949' codec can't encode character '\U0001f4bc' in position 66: illegal multibyte sequence
+ìƒíƒœ: Success | ë¡œë¸”ë¡ìŠ¤ ë‹‰ë„¤ì„: 8w1p1p1 | ì•„ì´ë””: 1452497322 | ì‚¬ìœ : ì§€ê¸‰ëœ ì—­í• : ã€ ğŸ’¼ â€¢ ğ“ğğšğ¦ ğ†ğ‡ ã€
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: tostiste | ¾ÆÀÌµğ: None | »çÀ¯: À¯Àú¸¦ Ã£Áö ¸øÇÔ.
+»óÅÂ: Success | ·Îºí·Ï½º ´Ğ³×ÀÓ: 8w1p1p1 | ¾ÆÀÌµğ: 1452497322 | »çÀ¯: Áö±ŞµÈ ¿ªÇÒ: ½Ã¹Î | Citizen
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: tostiste | ¾ÆÀÌµğ: None | »çÀ¯: À¯Àú¸¦ Ã£Áö ¸øÇÔ.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: tostiste | ¾ÆÀÌµğ: None | »çÀ¯: À¯Àú¸¦ Ã£Áö ¸øÇÔ.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: tostiste | ¾ÆÀÌµğ: 1242318537 | »çÀ¯: ¼Ò°³ ¹®±¸°¡ ¿Ã¹Ù¸£Áö ¾ÊÀ½.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: Hyundai_ka | ¾ÆÀÌµğ: None | »çÀ¯: À¯Àú¸¦ Ã£Áö ¸øÇÔ.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: Hyundai_ka | ¾ÆÀÌµğ: None | »çÀ¯: À¯Àú¸¦ Ã£Áö ¸øÇÔ.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: Hyundai_ka | ¾ÆÀÌµğ: 3036902565 | »çÀ¯: ¼Ò°³ ¹®±¸°¡ ¿Ã¹Ù¸£Áö ¾ÊÀ½.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: Hyundai_ka | ¾ÆÀÌµğ: 3036902565 | »çÀ¯: ¼Ò°³ ¹®±¸°¡ ¿Ã¹Ù¸£Áö ¾ÊÀ½.
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: tostiste | ¾ÆÀÌµğ: 1242318537 | »çÀ¯: 403 Forbidden (error code: 50013): Missing Permissions
+»óÅÂ: Failed | ·Îºí·Ï½º ´Ğ³×ÀÓ: tostiste | ¾ÆÀÌµğ: 1242318537 | »çÀ¯: 403 Forbidden (error code: 50013): Missing Permissions

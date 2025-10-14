@@ -1,0 +1,6 @@
+discord.py
+requests
+datetime
+flask
+pyarmor
+aiohttp
