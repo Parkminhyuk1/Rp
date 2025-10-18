@@ -14,9 +14,12 @@ import json
 import time
 from datetime import datetime
 from config import Config
+from flask import Flask
 import aiohttp
 import os
 import csv
+
+app = Flask(__name__)
 
 # 봇 설정
 TOKEN = Config.bot_token
@@ -1360,4 +1363,5 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
 
 bot.run(TOKEN)
+
 
