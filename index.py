@@ -1352,4 +1352,8 @@ async def on_message(message):
         else:
             embed=discord.Embed(title="작동 실패", description=f"{discord_user}님은 등록되지 않았습니다.", color=discord.Color.red())
             await message.channel.send(embed=embed)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
 bot.run(TOKEN)
