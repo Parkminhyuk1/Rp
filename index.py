@@ -19,14 +19,6 @@ import aiohttp
 import os
 import csv
 
-def run_flask():
-    app.run(host="0.0.0.0", port=8080)
-
-if __name__ == "__main__":
-    # Flask 서버를 별도의 스레드로 실행 (Koyeb 헬스체크용)
-    threading.Thread(target=run_flask, daemon=True).start()
-    print("[GH's BotShop] Flask 서버가 백그라운드에서 실행 중입니다.")
-
 # 봇 설정
 TOKEN = Config.bot_token
 GUILD_ID = Config.guild_id
@@ -1361,7 +1353,20 @@ async def on_message(message):
             embed=discord.Embed(title="작동 실패", description=f"{discord_user}님은 등록되지 않았습니다.", color=discord.Color.red())
             await message.channel.send(embed=embed)
 
+        if __name__ == "__main__":
+    # Flask 서버를 백그라운드로 실행 (Koyeb 헬스체크용)
+    flask_thread = threading.Thread(target=run_flask, daemon=True)
+    flask_thread.start()
+    print("[GH's BotShop] Flask 서버가 백그라운드에서 실행 중입니다.")
+
+    # Discord 봇 실행
+    try:
+        bot.run(TOKEN)
+    except Exception as e:
+        print(f"[GH's BotShop] 봇 실행 중 오류 발생: {e}")
+
 bot.run(TOKEN)
+
 
 
 
