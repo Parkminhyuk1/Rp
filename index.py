@@ -14,12 +14,18 @@ import json
 import time
 from datetime import datetime
 from config import Config
-from flask import Flask
+import threading
 import aiohttp
 import os
 import csv
 
-app = Flask(__name__)
+def run_flask():
+    app.run(host="0.0.0.0", port=8080)
+
+if __name__ == "__main__":
+    # Flask 서버를 별도의 스레드로 실행 (Koyeb 헬스체크용)
+    threading.Thread(target=run_flask, daemon=True).start()
+    print("[GH's BotShop] Flask 서버가 백그라운드에서 실행 중입니다.")
 
 # 봇 설정
 TOKEN = Config.bot_token
@@ -35,10 +41,6 @@ intents.message_content = True
 intents.guilds = True
 intents.members = True
 client = discord.Client(intents=intents)
-
-@app.route('/')
-def home():
-    return "Server is running!"
 
 # 인증 문구 생성 (랜덤)
 def generate_verification_message():
@@ -1359,9 +1361,7 @@ async def on_message(message):
             embed=discord.Embed(title="작동 실패", description=f"{discord_user}님은 등록되지 않았습니다.", color=discord.Color.red())
             await message.channel.send(embed=embed)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
-
 bot.run(TOKEN)
+
 
 
