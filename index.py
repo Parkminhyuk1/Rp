@@ -434,7 +434,12 @@ def get_user_by_roblox(roblox_nickname):
     else:
         return jsonify({"error": "User not found"}), 404
 
+# ====== Flask 앱 (API) ======
+flask_app = Flask(__name__)
 
+@flask_app.route("/")
+def home():
+    return "Server is running!"
 
 @app.route('/api/users', methods=['POST'])
 def add_user():
@@ -633,8 +638,10 @@ def load_ban_data():
 def get_ban_data():
     return jsonify(load_ban_data())
 
+# ====== Flask 실행 함수 ======
 def run_flask():
-    app.run(host='0.0.0.0', port=Config.server_port)
+    flask_app.run(host="0.0.0.0", port=Config.server_port, threaded=True)
+
     
 # Flask 서버 실행 (비동기로 실행)
 flask_thread = threading.Thread(target=run_flask, daemon=True)
@@ -1353,19 +1360,21 @@ async def on_message(message):
             embed=discord.Embed(title="작동 실패", description=f"{discord_user}님은 등록되지 않았습니다.", color=discord.Color.red())
             await message.channel.send(embed=embed)
 
-        if __name__ == "__main__":
-    # Flask 서버를 백그라운드로 실행 (Koyeb 헬스체크용)
+# ====== 시작 지점 ======
+if __name__ == "__main__":
+    # Flask 스레드로 실행
     flask_thread = threading.Thread(target=run_flask, daemon=True)
     flask_thread.start()
-    print("[GH's BotShop] Flask 서버가 백그라운드에서 실행 중입니다.")
+    print("[SYSTEM] Flask 서버 시작됨")
 
     # Discord 봇 실행
     try:
-        bot.run(TOKEN)
+        bot.run(Config.bot_token)
     except Exception as e:
-        print(f"[GH's BotShop] 봇 실행 중 오류 발생: {e}")
+        print(f"[SYSTEM] 봇 실행 중 오류: {e}")
 
 bot.run(TOKEN)
+
 
 
 
