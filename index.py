@@ -33,6 +33,9 @@ intents.guilds = True
 intents.members = True
 client = discord.Client(intents=intents)
 
+@app.route('/')
+def home():
+    return "Server is running!"
 
 # 인증 문구 생성 (랜덤)
 def generate_verification_message():
@@ -1357,3 +1360,4 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
 
 bot.run(TOKEN)
+
